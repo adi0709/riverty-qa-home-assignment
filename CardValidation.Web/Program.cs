@@ -22,7 +22,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
 void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers();
@@ -36,3 +35,4 @@ void ConfigureServices(IServiceCollection services)
         options.Filters.Add(typeof(CreditCardValidationFilter)); ;
     });
 }
+public partial class Program { }
